@@ -1,0 +1,8 @@
+C:\Users\Danii\source\repos\entering numbers into an array\entering numbers into an array\bin\Debug\entering numbers into an array.exe.config
+C:\Users\Danii\source\repos\entering numbers into an array\entering numbers into an array\bin\Debug\entering numbers into an array.exe
+C:\Users\Danii\source\repos\entering numbers into an array\entering numbers into an array\bin\Debug\entering numbers into an array.pdb
+C:\Users\Danii\source\repos\entering numbers into an array\entering numbers into an array\obj\Debug\entering numbers into an array.csproj.AssemblyReference.cache
+C:\Users\Danii\source\repos\entering numbers into an array\entering numbers into an array\obj\Debug\entering numbers into an array.csproj.SuggestedBindingRedirects.cache
+C:\Users\Danii\source\repos\entering numbers into an array\entering numbers into an array\obj\Debug\entering numbers into an array.csproj.CoreCompileInputs.cache
+C:\Users\Danii\source\repos\entering numbers into an array\entering numbers into an array\obj\Debug\entering numbers into an array.exe
+C:\Users\Danii\source\repos\entering numbers into an array\entering numbers into an array\obj\Debug\entering numbers into an array.pdb

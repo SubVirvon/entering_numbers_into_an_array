@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "entering numbers into an array", "entering numbers into an array\entering numbers into an array.csproj", "{F6CCB12B-5902-4B61-A0B7-4782055C0775}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6CCB12B-5902-4B61-A0B7-4782055C0775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6CCB12B-5902-4B61-A0B7-4782055C0775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6CCB12B-5902-4B61-A0B7-4782055C0775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6CCB12B-5902-4B61-A0B7-4782055C0775}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DE10F7C-FDC4-4323-AFC7-0D9427904293}
+	EndGlobalSection
+EndGlobal
