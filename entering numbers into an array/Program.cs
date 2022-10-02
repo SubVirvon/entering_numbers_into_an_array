@@ -14,12 +14,11 @@ namespace entering_numbers_into_an_array
             const string CommandSum = "sum";
             int[] array = new int[0];
             bool isExit = false;
-            int sum = 0;
             string command;
 
             while(isExit == false)
             {
-                Console.Write("Введите команду (sum, exit) или число: ");
+                Console.Write("Введите команду (" + CommandSum + ", " + CommandExit + ") или число: ");
                 command = Console.ReadLine();
 
                 switch (command)
@@ -29,6 +28,8 @@ namespace entering_numbers_into_an_array
                         Console.WriteLine("Программа завершена");
                         break;
                     case CommandSum:
+                        int sum = 0;
+
                         for (int i = 0; i < array.Length; i++)
                         {
                             sum += array[i];
