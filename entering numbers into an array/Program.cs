@@ -12,7 +12,7 @@ namespace entering_numbers_into_an_array
         {
             const string CommandExit = "exit";
             const string CommandSum = "sum";
-            int[] array = new int[0];
+            List<int> numbers = new List<int>();
             bool isExit = false;
             string command;
 
@@ -25,32 +25,38 @@ namespace entering_numbers_into_an_array
                 {
                     case CommandExit:
                         isExit = true;
-                        Console.WriteLine("Программа завершена");
+                        
                         break;
                     case CommandSum:
-                        int sum = 0;
-
-                        for (int i = 0; i < array.Length; i++)
-                        {
-                            sum += array[i];
-                        }
-
-                        Console.WriteLine(sum);
+                        Console.Write($"Ccума всех чисел: {sumNumbers(numbers)}\n");
                         break;
                     default:
-                        int[] tempArray = new int[array.Length + 1];
-
-                        for(int i = 0; i < array.Length; i++)
+                        if(int.TryParse(command, out int number))
                         {
-                            tempArray[i] = array[i];
+                            numbers.Add(number);
                         }
-
-                        tempArray[tempArray.Length - 1] = Convert.ToInt32(command);
-
-                        array = tempArray;
+                        else
+                        {
+                            Console.WriteLine("Некоректный ввод");
+                        }
                         break;
                 }
             }
+
+            Console.WriteLine("Программа завершена");
+            Console.ReadKey();
+        }
+
+        static int sumNumbers(List<int> numbers)
+        {
+            int sum = 0;
+
+            foreach(int number in numbers)
+            {
+                sum += number;
+            }
+
+            return sum;
         }
     }
 }
