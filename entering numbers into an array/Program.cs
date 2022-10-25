@@ -24,21 +24,13 @@ namespace entering_numbers_into_an_array
                 switch (command)
                 {
                     case CommandExit:
-                        isExit = true;
-                        
+                        isExit = true; 
                         break;
                     case CommandSum:
-                        Console.Write($"Ccума всех чисел: {sumNumbers(numbers)}\n");
+                        Console.Write($"Cумма всех чисел: {SumNumbers(numbers)}\n");
                         break;
                     default:
-                        if(int.TryParse(command, out int number))
-                        {
-                            numbers.Add(number);
-                        }
-                        else
-                        {
-                            Console.WriteLine("Некоректный ввод");
-                        }
+                        AddNumber(numbers, command);
                         break;
                 }
             }
@@ -47,7 +39,7 @@ namespace entering_numbers_into_an_array
             Console.ReadKey();
         }
 
-        static int sumNumbers(List<int> numbers)
+        static int SumNumbers(List<int> numbers)
         {
             int sum = 0;
 
@@ -57,6 +49,18 @@ namespace entering_numbers_into_an_array
             }
 
             return sum;
+        }
+
+        static void AddNumber(List<int> numbers, string input)
+        {
+            if (int.TryParse(input, out int number))
+            {
+                numbers.Add(number);
+            }
+            else
+            {
+                Console.WriteLine("Некоректный ввод");
+            }
         }
     }
 }
